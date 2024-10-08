@@ -1,0 +1,6 @@
+Primeira ida: ligar o primeiro interruptor e deixar ligado por alguns minutos. Depois, desligar e ligar o segundo interruptor.
+Segunda ida: ir até as lâmpadas.
+
+A lâmpada que está acesa corresponde ao segundo interruptor (que esta ligado).
+A lâmpada que está apagada, mas quente, corresponde ao primeiro interruptor (que deixou ligado antes).
+A lâmpada que está apagada e fria corresponde ao terceiro interruptor (que nunca foi ligado antes).
