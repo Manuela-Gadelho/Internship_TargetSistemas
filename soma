@@ -1,0 +1,7 @@
+O loop começa com 1 e continua até K < 12. O loop incrementa K++ e adiciona o valor de K à soma sempre
+
+Os valores de K ao longo do loop serão: 2, 3, 4, ..., 11 (K = 12 para a condição de parada do nosso laço).
+
+A soma dos números de 1 a 11 é:
+SOMA=2+3+4+5+6+7+8+9+10+11=65
+Portanto, ao final do processamento, o valor da variável SOMA será 65.
