@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class FibonacciChecker {
+    public static List<Integer> fibonacciSequence(int n) {
+        List<Integer> fib = new ArrayList<>();
+        fib.add(0);
+        fib.add(1);
+        
+        while (fib.get(fib.size() - 1) < n) {
+            int nextFib = fib.get(fib.size() - 1) + fib.get(fib.size() - 2);
+            fib.add(nextFib);
+        }
+        
+        return fib;
+    }
+
+    public static String belongsToFibonacci(int n) {
+        List<Integer> fibSequence = fibonacciSequence(n);
+        if (fibSequence.contains(n)) {
+            return "O numero " + n + " pertence a sequencia de Fibonacci";
+        } else {
+            return "O numero " + n + " nao pertence a sequencia de Fibonacci";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Informe um numero: ");
+        int number = scanner.nextInt();
+        System.out.println(belongsToFibonacci(number));
+        scanner.close();
+    }
+}
