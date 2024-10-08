@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CountAInString {
+    public static void countAInString(String s) {
+        int countLower = 0;
+        int countUpper = 0;
+
+        for (char c : s.toCharArray()) {
+            if (c == 'a') {
+                countLower++;
+            } else if (c == 'A') {
+                countUpper++;
+            }
+        }
+
+        System.out.println("A letra 'a' (minuscula) aparece " + countLower + " vezes na string.");
+        System.out.println("A letra 'A' (maiuscula) aparece " + countUpper + " vezes na string.");
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Informe uma string: ");
+        String inputString = scanner.nextLine();
+        countAInString(inputString);
+        scanner.close();
+    }
+}
